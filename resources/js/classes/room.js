@@ -8,7 +8,7 @@ export default class Room {
     #height;
     #wallThickness;
 
-    constructor(width, length, height, wallThickness = 0.1) {
+    constructor(width = 1, length = 1, height = 1, wallThickness = 0.1) {
         this._width = width;
         this._length = length;
         this._height = height;

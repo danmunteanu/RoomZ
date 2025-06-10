@@ -1,21 +1,27 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-import ApartmentScene from '../classes/apartmentScene.js';
+import Scene3D from '../classes/scene3D.js';
+import Apartment from '../classes/apartment.js';
 
-let aptScene = null;
+let apartment = ref(null);
+
+let scene3D = null;
 
 onMounted(() => {
-  aptScene = new ApartmentScene("canvas");
-  aptScene.animate();
+  apartment = new Apartment();
+  scene3D = new Scene3D("canvas");
 });
 </script>
 
 <template>
-    <canvas id="canvas"></canvas>
+    <div class="mb-3 mt-3">
+        <canvas id="canvas"></canvas>
+    </div>
 </template>
 
 <style scoped>
+
 #canvas {
   display: block;
   width: 100%;
