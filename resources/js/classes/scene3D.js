@@ -25,7 +25,10 @@ export default class ApartmentScene
         // RENDERER
         this.canvas = document.querySelector('#canvas');
         this.renderer = new THREE.WebGLRenderer({ antialias: true, canvas: this.canvas });
-        this.renderer.setSize(window.innerWidth, window.innerHeight, false);
+        const width = this.canvas.clientWidth;
+        const height = this.canvas.clientHeight;
+        this.renderer.setSize(width, height, false);
+
 
         //  MATERIAL
         this.material = new THREE.MeshPhongMaterial({
@@ -57,7 +60,7 @@ export default class ApartmentScene
         this.cube.rotation.x += 0.01;
         this.cube.rotation.y += 0.01;
         this.renderer.render(this.scene, this.camera);
-        
+
         requestAnimationFrame(this.render);
     }
 

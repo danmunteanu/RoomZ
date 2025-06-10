@@ -8,6 +8,8 @@ export default class Apartment
         
         this.rooms = [];
         this.rooms.push(room);
+
+        this.rooms.push(new Room(4, 3, 1.5, 0.5)); 
     }
 
     addRoom(room)
