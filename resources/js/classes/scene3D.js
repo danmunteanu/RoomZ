@@ -53,13 +53,6 @@ export default class Scene3D
         this.createPlane();
         this.createGridHelper();
 
-        // Handle window resize
-        window.addEventListener('resize', () => {
-            this.scene.renderer.setSize(this.scene.canvas.clientWidth, this.scene.canvas.clientHeight, false);
-            this.scene.camera.aspect = this.scene.canvas.clientWidth / this.scene.canvas.clientHeight;
-            this.scene.camera.updateProjectionMatrix();
-        });
-
         //  Bind this
         this.render = this.render.bind(this);
 
