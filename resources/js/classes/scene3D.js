@@ -55,9 +55,9 @@ export default class Scene3D
 
         // Handle window resize
         window.addEventListener('resize', () => {
-            this.camera.aspect = canvas.innerWidth / canvas.innerHeight;
-            this.camera.updateProjectionMatrix();
-            this.renderer.setSize(canvas.innerWidth, canvas.innerHeight);
+            this.scene.renderer.setSize(this.scene.canvas.clientWidth, this.scene.canvas.clientHeight, false);
+            this.scene.camera.aspect = this.scene.canvas.clientWidth / this.scene.canvas.clientHeight;
+            this.scene.camera.updateProjectionMatrix();
         });
 
         //  Bind this
@@ -134,6 +134,7 @@ export default class Scene3D
         const needResize = canvas.width !== width || canvas.height !== height;
         
         if (needResize) {
+            console.log(canvas);
             console.log({canvas, pixelRatio, width, height, clientWidth, clientHeight});
             renderer.setSize(width, height, false);
         }
