@@ -121,21 +121,15 @@ export default class Scene3D
     }
 
     resizeRendererToDisplaySize(renderer) {
-        const canvas = renderer.domElement;
-        
+        const canvas = renderer.domElement;        
         const pixelRatio = window.devicePixelRatio;
-        
-        const clientWidth = canvas.clientWidth;
-        const clientHeight = canvas.clientHeight;
-
+        // const clientWidth = canvas.clientWidth;
+        // const clientHeight = canvas.clientHeight;
         const width = Math.floor(canvas.clientWidth * pixelRatio);
         const height = Math.floor(canvas.clientHeight * pixelRatio);
-
         const needResize = canvas.width !== width || canvas.height !== height;
-        
         if (needResize) {
-            console.log(canvas);
-            console.log({canvas, pixelRatio, width, height, clientWidth, clientHeight});
+            // console.log({canvas, pixelRatio, width, height, clientWidth, clientHeight});
             renderer.setSize(width, height, false);
         }
         return needResize;
