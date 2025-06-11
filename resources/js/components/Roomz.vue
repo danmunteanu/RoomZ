@@ -41,6 +41,7 @@ onMounted(() => {
 #canvas {
   width: 100%;
   width: 100%;
+  min-height: 480px;
   display: block;
 }
 </style>
