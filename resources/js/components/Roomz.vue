@@ -26,12 +26,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="row" style="margin-top: 55px;">
-    <div class="offset-2 col-3 px-2">
-        EDITORS BE HERE
+  <div class="grid grid-cols-4 mx-40 mt-15">
+    <div>
+      EDITORS BE HERE
     </div>
-    
-    <div class="col-6 mb-3 mt-3">
+    <div class="col-span-3">
       <canvas id="canvas"></canvas>
     </div>
   </div>

@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 export default class Scene3D
 {
@@ -72,6 +73,8 @@ export default class Scene3D
         this.camera.position.set(5, 8, 13);
         this.camera.position.set(-2, 2, 2);
         this.camera.lookAt(0, 0, 0);
+
+        this.controls = new OrbitControls(this.camera, this.render.domElement);
     }
 
     createPlane() {
