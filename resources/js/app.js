@@ -1,6 +1,6 @@
 import './bootstrap';
 
 import { createApp } from 'vue';
-import RoomZ from './components/Roomz.vue'
+import RoomZ from '@/App.vue';
 
-createApp(RoomZ).mount('#rooms');
+createApp(RoomZ).mount('#app');
