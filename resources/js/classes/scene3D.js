@@ -74,7 +74,7 @@ export default class Scene3D
         this.camera.position.set(-2, 2, 2);
         this.camera.lookAt(0, 0, 0);
 
-        this.controls = new OrbitControls(this.camera, this.render.domElement);
+        this.controls = new OrbitControls(this.camera, this.canvas);
     }
 
     createPlane() {
