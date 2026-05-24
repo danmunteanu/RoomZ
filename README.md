@@ -5,10 +5,10 @@ It handles resize of the viewport.
 This project's purpose is to help set up three.js fast.
 
 ## Dependencies
-* Laravel (*obviously*)
-* Vue.js
-* tailwind
-* [Three.js](https://threejs.org/) - *a 3D rendering library in Javascript.*
+* [Laravel](https://laravel.com/) - *obviously*
+* [Vue.js](https://vuejs.org/)
+* [tailwind](https://tailwindcss.com/)
+* [Three.js](https://threejs.org/) - *a 3D rendering library written in Javascript.*
 
 ## Project setup
 After cloning, run:
