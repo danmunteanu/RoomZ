@@ -6,17 +6,12 @@ import Editors from './components/Editors.vue';
 </script>
 
 <template>
-  <div class="grid grid-cols-2 mx-40 mt-15">
+  <div class="grid grid-cols-2 mx-40">
       <Editors />
-      <Canvas />
+      <Canvas/>
   </div>
 </template>
 
 <style scoped>
-#canvas {
-  width: 100%;
-  width: 100%;
-  min-height: 480px;
-  display: block;
-}
+/* Add custom styles here */
 </style>
