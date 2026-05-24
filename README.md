@@ -1,9 +1,14 @@
 ## Description
 This is a very basic Laravel, Vue.js and three.js setup. 
 It creates a three.js scene and starts rotating a cube.
-It's helpful when having to set up three.js repeatedly.
+It handles resize of the viewport.
+This project's purpose is to help set up three.js fast.
 
-[Three.js](https://threejs.org/) is a 3D rendering library in Javascript.
+## Dependencies
+* Laravel (*obviously*)
+* Vue.js
+* tailwind
+* [Three.js](https://threejs.org/) - *a 3D rendering library in Javascript.*
 
 ## Project setup
 After cloning, run:
@@ -15,6 +20,7 @@ Set it up to use sqlite (although the db is not used yet).
 Also run:
 * **php artisan migrate** for the migrations
 * **php artisan key:generate** to generate the application key
+* **composer run dev** to start the server
 
 If everything is fine, you should see a cube spinning.
 
